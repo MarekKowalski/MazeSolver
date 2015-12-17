@@ -11,7 +11,7 @@ There are two example mazes included in the project. Both are distributed under 
 maze1.jpg: https://en.wikipedia.org/wiki/Maze#/media/File:Circularmazeexample.jpg  
 maze2.jpg: https://upload.wikimedia.org/wikipedia/commons/3/32/MAZE_2000x2000_DFS.png 
 
-In order to see an example of a solved maze visit my website, here:  
+In order to see an example of a solved maze, visit my website here:  
 http://home.elka.pw.edu.pl/~mkowals6/doku.php?id=wiki:hobby
 
 ## How to run it ##
