@@ -114,6 +114,19 @@ void getPathThroughMaze(unsigned char *outputImage, unsigned char *binaryImage, 
 		return;
 	}
 
+	//Let's color the maze walls in a black, with gray background so that the path is more visible.
+	for (int x = 0; x < w; x++)
+	{
+		for (int y = 0; y < h; y++)
+		{
+			for (int i = 0; i < 3; i++)
+			{
+				if (binaryImage[x + y * w] == 255)
+					outputImage[3 * (x + y * w) + i] = 128;
+			}
+		}
+	}
+
 	printf("Drawing path\n");
 	unsigned int currPathValue = pathValue[endX + endY * w];
 	int currX = endX;
@@ -151,19 +164,6 @@ void getPathThroughMaze(unsigned char *outputImage, unsigned char *binaryImage, 
 
 		currPathValue = pathValue[currX + currY * w];
 	}
-
-	//Let's color the maze walls in a gray color, with black background so that the path is more visible.
-	for (int x = 0; x < w; x++)
-	{
-		for (int y = 0; y < h; y++)
-		{
-			for (int i = 0; i < 3; i++)
-			{
-				if (binaryImage[x + y * w] == 0)
-					outputImage[3 * (x + y * w) + i] = 128;
-			}
-		}
-	}
 }
 
 int main(int argc, char *argv[])
@@ -197,17 +197,19 @@ int main(int argc, char *argv[])
 
 	int actual_comps;
 	inputImage = jpgd::decompress_jpeg_image_from_file(argv[1], &w, &h, &actual_comps, 1);
-	outputImage = (unsigned char*)calloc(w * h * 3, 1);
-	binaryImage = (unsigned char*)calloc(w * h, 1);
+	outputImage = new unsigned char[w * h * 3]();
+	binaryImage = new unsigned char[w * h]();
 
 	binarizeImage(inputImage, binaryImage, w * h, 200);
 	dilateImage(binaryImage, w, h);
 	getPathThroughMaze(outputImage, binaryImage, w, h, startX, startY, endX, endY, saveCostMap);
 
-	jpge::compress_image_to_jpeg_file("output.jpg", w, h, 3, outputImage);
+	jpge::params params;
+	params.m_quality = 100;
+	jpge::compress_image_to_jpeg_file("output.jpg", w, h, 3, outputImage, params);
 
-	free(inputImage);
-	free(outputImage);
+	delete []inputImage;
+	delete []outputImage;
 
 	return 0;
 }
