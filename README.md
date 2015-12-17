@@ -7,12 +7,14 @@ The maze images need to fulfill some conditions:
 - there cen be no "tunnels" or "overpassess" in the maze.
 
 ## Examples ##
-There are two example mazes included in the project. Both are distributed under the creative commons license, the original images are available here:  
+There are three example mazes included in the project. All are distributed under the creative commons license, the original images are available here:  
 maze1.jpg: https://en.wikipedia.org/wiki/Maze#/media/File:Circularmazeexample.jpg  
 maze2.jpg: https://upload.wikimedia.org/wikipedia/commons/3/32/MAZE_2000x2000_DFS.png 
+maze3.jpg: https://en.wikipedia.org/wiki/User:Dllu/Maze#/media/File:MAZE_40x20_DFS_no_deadends.png
 
-In order to see an example of a solved maze, visit my website here:  
-http://home.elka.pw.edu.pl/~mkowals6/doku.php?id=wiki:hobby
+Below you can see the maze3.jpg example file along with its solution.
+![maze3.jpg](http://home.elka.pw.edu.pl/~mkowals6/lib/exe/fetch.php?media=wiki:maze3.jpg)  
+![maze3_solved.jpg](http://home.elka.pw.edu.pl/~mkowals6/lib/exe/fetch.php?media=wiki:maze3_solved.jpg)
 
 ## How to run it ##
 MazeSolver is a console application, to run it you need to open the console and browse to the location of the app.  
@@ -28,10 +30,11 @@ END_X/Y are the pixel coordinates of the maze exit.
 
 So to run the app with one of the example mazes you need to write:
 MazeSolver.exe maze1.jpg 224 177 633 620  
-or for the other example:  
+or for another example:  
 MazeSolver.exe maze2.jpg 1 1 4000 3999
 
 ## Licensing ##
 All of the code except the jpg compression/decompression is licensed under the MIT license.
 The jpgd library which is used for reading and writing jpg images is in the public domain, more info here:
 https://code.google.com/p/jpeg-compressor/
+
