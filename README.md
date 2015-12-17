@@ -9,8 +9,8 @@ The maze images need to fulfill some conditions:
 ## Examples ##
 There are three example mazes included in the project. All are distributed under the creative commons license, the original images are available here:  
 maze1.jpg: https://en.wikipedia.org/wiki/Maze#/media/File:Circularmazeexample.jpg  
-maze2.jpg: https://upload.wikimedia.org/wikipedia/commons/3/32/MAZE_2000x2000_DFS.png 
-maze3.jpg: https://en.wikipedia.org/wiki/User:Dllu/Maze#/media/File:MAZE_40x20_DFS_no_deadends.png
+maze2.jpg: https://upload.wikimedia.org/wikipedia/commons/3/32/MAZE_2000x2000_DFS.png  
+maze3.jpg: https://en.wikipedia.org/wiki/User:Dllu/Maze#/media/File:MAZE_40x20_DFS_no_deadends.png  
 
 Below you can see the maze3.jpg example file along with its solution.  
 ![maze3.jpg](http://home.elka.pw.edu.pl/~mkowals6/lib/exe/fetch.php?media=wiki:maze3.jpg)  
