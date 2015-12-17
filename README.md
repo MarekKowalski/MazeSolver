@@ -6,6 +6,8 @@ The maze images need to fulfill some conditions:
 - the walls need to be black or at least darker than the background,
 - there cen be no "tunnels" or "overpassess" in the maze.
 
+If you do not want to compile the app yourself, you can download the Windows binaries from my website:   http://http://home.elka.pw.edu.pl/~mkowals6/
+
 ## Examples ##
 There are three example mazes included in the project. All are distributed under the creative commons license, the original images are available here:  
 maze1.jpg: https://en.wikipedia.org/wiki/Maze#/media/File:Circularmazeexample.jpg  
