@@ -178,7 +178,7 @@ int main(int argc, char *argv[])
 		printf("Not enough input argmuents. The proper way to run the program is shown below.\n");
 		printf("If the program completes successully the path through the maze will be saved in output.jpg\n");
 		printf("\n");
-		printf("MazeSolver IMAGE_FILE_NAME.jpg START_X START_Y END_X END_Y [SAVE_COST_MAP]\n");
+		printf("MazeSolver.exe IMAGE_FILE_NAME.jpg START_X START_Y END_X END_Y [SAVE_COST_MAP]\n");
 		printf("\n");
 		printf("Where:\n");
 		printf("\tSTART_X/Y are the pixel coordinates of the maze entrance.\n");
