@@ -7,6 +7,12 @@ The maze images need to fulfill some conditions:
 - there cen be no "tunnels" or "overpassess" in the maze.
 
 ## Examples ##
+There are two example mazes included in the project. Both are distributed under the creative commons license, the original images are available here:  
+maze1.jpg: https://en.wikipedia.org/wiki/Maze#/media/File:Circularmazeexample.jpg  
+maze2.jpg: https://upload.wikimedia.org/wikipedia/commons/3/32/MAZE_2000x2000_DFS.png 
+
+In order to see an example of a solved maze visit my website, here:  
+http://home.elka.pw.edu.pl/~mkowals6/doku.php?id=wiki:hobby
 
 ## How to run it ##
 MazeSolver is a console application, to run it you need to open the console and browse to the location of the app.  
