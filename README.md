@@ -32,9 +32,9 @@ END_X/Y are the pixel coordinates of the maze exit.
 [SAVE_COST_MAP] is an additional paramter, if added the program saves the maze cost map instead of the path through the maze.
 
 So to run the app with one of the example mazes you need to write:
-MazeSolver.exe maze1.jpg 224 177 633 620  
+MazeSolver.exe ../maze1.jpg 224 177 633 620  
 or for another example:  
-MazeSolver.exe maze2.jpg 1 1 4000 3999
+MazeSolver.exe ../maze2.jpg 1 1 4000 3999
 
 ## Licensing ##
 All of the code except the jpg compression/decompression is licensed under the MIT license.
